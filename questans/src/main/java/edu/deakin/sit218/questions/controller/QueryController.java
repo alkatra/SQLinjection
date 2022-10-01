@@ -27,14 +27,7 @@ public class QueryController {
             return "questions";
         }
 
-        //Retrieve Client object from database
-        
-        //Check whether the client doesn't exist
-        /*
-        
-        //Sync Client object with database
-        
-        */
+
         QuestionDAO dao = new QuestionDAOImpl(); 
         dao.insertQuestion(question);
         List<Question> questions = dao.retrieveQuestion(question.getArea());
@@ -56,17 +49,7 @@ public class QueryController {
             model.addAttribute("message", "Error");
             return "questions";
         }
-        //Input validation
 
-
-        //Retrieve Client object from database
-        
-        //Check whether the client doesn't exist
-        /*
-        
-        //Sync Client object with database
-        
-        */
         questionsstring = "";
         QuestionDAO dao = new QuestionDAOImpl(); 
         List<Question> questions = dao.retrieveQuestion(question.getArea());
