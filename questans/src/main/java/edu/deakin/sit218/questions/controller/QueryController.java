@@ -18,6 +18,7 @@ import edu.deakin.sit218.questions.entity.Question;
 @RequestMapping("/question")
 public class QueryController {
     
+    @RequestMapping("/processForm")
     public String workout(
             @Valid @ModelAttribute("question") Question question, 
             BindingResult validationErrors, Model model) {
